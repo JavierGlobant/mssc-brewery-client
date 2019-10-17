@@ -1,0 +1,12 @@
+services:
+  brewery:
+    scheme: http
+    host: localhost
+    port: 8080
+    baseContext: api
+    version: v1
+    endpoints:
+      createBeer: /beers/new
+      getBeerById: /beers/{beerId}
+      updateBeerById: /beers/{beerId}
+      deleteBeerById: /beers/{beerId}

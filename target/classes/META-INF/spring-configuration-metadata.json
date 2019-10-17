@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "services.brewery",
+      "type": "mart.karle.msscbreweryclient.web.config.BreweryServiceConfig",
+      "sourceType": "mart.karle.msscbreweryclient.web.config.BreweryServiceConfig"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
