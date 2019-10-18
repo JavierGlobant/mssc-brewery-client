@@ -23,4 +23,23 @@ public class BeerRepository {
     final URI uri = breweryServiceConfig.getUri(Constants.GET_BEER_BY_ID, uriVars);
     return restTemplate.getForObject(uri, BeerDto.class);
   }
+
+  public URI createBeer(final BeerDto beerDto) {
+    final URI uri = breweryServiceConfig.getUri(Constants.CREATE_BEER);
+    return restTemplate.postForLocation(uri, beerDto);
+  }
+
+  public void updateBeer(final UUID beerId, final BeerDto beerDto) {
+    final URI uri =
+        breweryServiceConfig.getUri(
+            Constants.UPDATE_BEER_BY_ID, Collections.singletonMap(Constants.BEER_ID, beerId));
+    restTemplate.put(uri, beerDto);
+  }
+
+  public void deleteBeer(final UUID beerId) {
+    final URI uri =
+        breweryServiceConfig.getUri(
+            Constants.DELETE_BEER_BY_ID, Collections.singletonMap(Constants.BEER_ID, beerId));
+    restTemplate.delete(uri);
+  }
 }

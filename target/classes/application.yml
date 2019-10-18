@@ -6,7 +6,11 @@ services:
     baseContext: api
     version: v1
     endpoints:
-      createBeer: /beers/new
-      getBeerById: /beers/{beerId}
-      updateBeerById: /beers/{beerId}
-      deleteBeerById: /beers/{beerId}
+      createBeer: beers/new
+      getBeerById: beers/{beerId}
+      updateBeerById: beers/{beerId}
+      deleteBeerById: beers/{beerId}
+      createCustomer: customers/new
+      getCustomerById: customers/{customerId}
+      updateCustomerById: customers/{customerId}
+      deleteCustomerById: customers/{customerId}
