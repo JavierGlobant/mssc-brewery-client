@@ -1,8 +1,13 @@
+#logging:
+#  level:
+#    org:
+#      apache:
+#        http: debug
 services:
   brewery:
     scheme: http
     host: localhost
-    port: 8080
+    port: 8081
     baseContext: api
     version: v1
     endpoints:
@@ -14,3 +19,17 @@ services:
       getCustomerById: customers/{customerId}
       updateCustomerById: customers/{customerId}
       deleteCustomerById: customers/{customerId}
+
+logging:
+  level:
+    org.apache.http: debug
+
+#logging:
+#  level:
+#    web: debug
+
+rest-template:
+  maxTotalConnections: 100
+  defaultMaxTotalConnections: 20
+  connectionRequestTimeout: 3000
+  socketTimeout: 3000

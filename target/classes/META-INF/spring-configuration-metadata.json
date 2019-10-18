@@ -1,11 +1,37 @@
 {
   "groups": [
     {
+      "name": "rest-template",
+      "type": "mart.karle.msscbreweryclient.web.config.RestTemplateConfig",
+      "sourceType": "mart.karle.msscbreweryclient.web.config.RestTemplateConfig"
+    },
+    {
       "name": "services.brewery",
       "type": "mart.karle.msscbreweryclient.web.config.BreweryServiceConfig",
       "sourceType": "mart.karle.msscbreweryclient.web.config.BreweryServiceConfig"
     }
   ],
-  "properties": [],
+  "properties": [
+    {
+      "name": "rest-template.connection-request-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "mart.karle.msscbreweryclient.web.config.RestTemplateConfig"
+    },
+    {
+      "name": "rest-template.default-max-total-connections",
+      "type": "java.lang.Integer",
+      "sourceType": "mart.karle.msscbreweryclient.web.config.RestTemplateConfig"
+    },
+    {
+      "name": "rest-template.max-total-connections",
+      "type": "java.lang.Integer",
+      "sourceType": "mart.karle.msscbreweryclient.web.config.RestTemplateConfig"
+    },
+    {
+      "name": "rest-template.socket-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "mart.karle.msscbreweryclient.web.config.RestTemplateConfig"
+    }
+  ],
   "hints": []
 }
