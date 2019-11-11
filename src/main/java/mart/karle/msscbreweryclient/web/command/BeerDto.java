@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @Data
@@ -16,4 +17,5 @@ public class BeerDto {
   private String name;
   private String style;
   private Long upc;
+  private BigDecimal price;
 }
